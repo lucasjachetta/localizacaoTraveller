@@ -1,27 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    
-    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sua Localização</title>
     <script src="/js/script.js"></script>
 
-    
+
 </head>
+
 <body onload="openMap()">
 
-    <h1>Sua Localização</h1>
-    <p>Olá viajante, sabemos como é complicado estar em um local onde não conhecemos.
-    E, pensando nisso criamos essa seção, onde você pode encontrar restaurantes, hoteis e pontos turísticos, todos pertinho de você!
-    Se você clicar no mapa, pode ainda verificar o ponto exato de onde você está! Esperamos que te ajude e que você tenha uma boa viagem!
-</p>
-        <div id="map" onclick=navigateToLocation()></div>
+    <div class="container">
+        <div class="main-container">
+            <h1>Sua Localização</h1>
+            <p>Olá viajante, sabemos como é complicado estar em um local onde não conhecemos.
+                E, pensando nisso criamos essa seção, onde você pode encontrar restaurantes, hoteis e pontos turísticos,
+                todos pertinho de você!
+                Se você clicar no mapa, pode ainda verificar o ponto exato de onde você está! Esperamos que te ajude e
+                que você tenha uma boa viagem!
+            </p>
+            <div id="map" onclick=navigateToLocation()></div>
 
-    <button id="buttonRestaurants" onclick=navigateToNearbyRestaurants()> Restaurantes Próximos </button>
-    <button id="buttonHotels" onclick=navigateToNearbyHotels()> Hotéis Próximos </button>
-    <button id="buttonSpots" onclick=navigateToNearbySpots()> Pontos Turísticos Próximos </button>
+            <div class="botoes">
+                <button id="buttonRestaurants" class="botao" onclick=navigateToNearbyRestaurants()> Restaurantes
+                    Próximos </button>
+                <button id="buttonHotels" class="botao" onclick=navigateToNearbyHotels()> Hotéis Próximos </button>
+                <button id="buttonSpots" class="botao" onclick=navigateToNearbySpots()> Pontos Turísticos Próximos
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer_principal my-5">
+        <p class="">2022 Todos os direitos reservados – Projeto Traveller</p>
+    </footer>
 </body>
+
 </html>

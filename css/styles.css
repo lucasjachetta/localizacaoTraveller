@@ -1,3 +1,102 @@
+/*  */
+/* Configurações Gerais */
+
+:root {
+    --mainColorBG: #F0F7FA;
+    --mainColorBGContent: #fff;
+    --mainColor: #0D3444;
+    --secundaryColor: #CCE8F5;
+    --tercearyColor: #99D2EA;
+    --fontColor: #000;
+    --fontColorida: #0D3444;
+    --fontPadrao: 'Inter', sans-serif;
+    --imagemlogo: url(/images/logo_traveller_fundo_transparente.png);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+
+
+body {
+    background-color: var(--mainColorBG);
+    font-family: var(--fontPadrao);
+    color: var(--fontColor);
+}
+
+
+a {
+    text-decoration: none;
+    color: #0D3444;
+    font-family: var(--fontPadrao);
+}
+
+/*Fim- Configurações Gerais */
+
+
+/* Início do container principal side bar e main container */
+
+.container {
+    /* height: 770px; */
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+}
+
+
+.main-container {
+    background-color: var(--mainColorBGContent);
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    height: fit-content;
+    padding: 30px;
+    box-sizing: border-box;
+    padding-bottom: 10%
+}
+
+/* Fim do container principal side bar e main container */
+
+
+/* fim Internal page */
+
+.footer_principal {
+    text-align: center;
+}
+
+/* Botão */
+.botao {
+    background-color: #0D3445;
+    width: 15em;
+    color: #FFFFFF;
+    border-radius: 10px;
+    height: 3em;
+    margin: 20px 20px 20px 20px;
+}
+
+.botao:hover {
+        background-color:#99D2EA;
+        color:#0D3444;
+    }
+
+
+/* Fim Botão*/
+
+
+.teste {
+    background-color: var(--mainColor);
+}
+
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
 #map {
     cursor: pointer;
 }
