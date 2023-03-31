@@ -8,5 +8,7 @@
 
 -A página tem como objetivo ajudar um viajante a se localizar melhor em uma viagem, facilitando sua jornada e pesquisa de lugares para conhecer na região.
 
-*API UTILIZADA*
+-Foi feito o deploy da página diretamente no github-pages: https://lucasjachetta.github.io/localizacaoTraveller/
+
+*API UTILIZADA:*
 http://developer.mapquest.com/documentation
